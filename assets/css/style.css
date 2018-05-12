@@ -6,6 +6,7 @@ header {
 
 body {
     background: #2a3138 url("../img/background.png") no-repeat;
+    background-size: cover;
     margin: 2% 5% 0% 5%;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 400;
