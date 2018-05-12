@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Group Project 1</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>Hi traveler,</header>
+        <subheader>We are here to help you with your next adventure!!!!!!!!</subheader>
+
+        <div class='instructions row'>Pick 3 Destinations:</div>
+
+        <br>
+
+        <div class='row'>
+            <div class='col-lg-3 picker-col' id='pickerCol1'>
+                <div id='map'></div>
+                <input type='text' id'cityInput1'>
+            </div>
+            <div class='col-lg-3 picker-col' id='pickerCol2'>
+                <div id='map'></div>
+                <input type='text' id'cityInput1'>
+            </div>
+            <div class='col-lg-3 picker-col' id='pickerCol3'></div>
+                <div id='map'></div>
+                <input type='text' id'cityInput1'>
+            </div>
+        </div>
+
+        <br>
+
+        <div class='row'>
+            <button id="continueButton">>>></button>
+        </div>
+
+    </div>
+
+    <div class="pictureTemp">
+        
+    </div>
+
+
+    <script src='assets/javascript/app.js'></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEL_ixBbgLQWdqBAVuH5Ibs-WTuYdjhqo&libraries=places&callback=initMap"></script>
+
+
+<script>
+
+var photoReference = "CmRaAAAA6z2646XkCoeArns1jXNvuSQbezHOHG2mxDgUuE6iJpVBsKfhAtgt1SEaO57FN0i-t9ejtjSglH6naCUBxuUojIMTFTamUOPuC_LoqtOp7qdQkAItyTcesQAjmiQCBvKeEhC3o-5gQ3t6JeUpVRYf1ODzGhTLY_6L1ydiWry4gsMLxVV86nez0Q"
+        
+var photoQueryURL = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=400&photoreference=" + photoReference + "&key=AIzaSyBEL_ixBbgLQWdqBAVuH5Ibs-WTuYdjhqo";
+   
+function callPhoto() {
+        $.ajax({
+            url: photoQueryURL,
+            method: "GET"
+        }) .then(function(photoResponse) {
+            console.log("hi");
+            $(".pictureTemp").appendTo(photoResponse)
+        });
+    }
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+var photoReference = "CmRaAAAA6z2646XkCoeArns1jXNvuSQbezHOHG2mxDgUuE6iJpVBsKfhAtgt1SEaO57FN0i-t9ejtjSglH6naCUBxuUojIMTFTamUOPuC_LoqtOp7qdQkAItyTcesQAjmiQCBvKeEhC3o-5gQ3t6JeUpVRYf1ODzGhTLY_6L1ydiWry4gsMLxVV86nez0Q"
+
+var photoQueryURL = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=400&photoreference=" + photoReference + "&key=AIzaSyBEL_ixBbgLQWdqBAVuH5Ibs-WTuYdjhqo";
+  
+    var img = $("<img>");
+    img.attr("src", photoQueryURL);
+   
+    $("#img-accommodation-1").attr("src", photoQueryURL)
+
+
+
+
