@@ -54,6 +54,7 @@ function initMap(centerLat, centerLng) {
                     method: 'GET',
                     url: `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?placeid=${this.placeId}&key=AIzaSyBEL_ixBbgLQWdqBAVuH5Ibs-WTuYdjhqo`
                 }).then (function(snapshot){
+                    console.log(snapshot);
                     for (var photoIdx = 0; photoIdx < 10; photoIdx++) {
                         var photoReference = snapshot.result.photos[photoIdx].photo_reference;
                         var photoQueryURL = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&maxheight=400&photoreference=${photoReference}&key=AIzaSyBEL_ixBbgLQWdqBAVuH5Ibs-WTuYdjhqo`;
