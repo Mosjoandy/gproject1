@@ -83,6 +83,7 @@ function generateCard(city) {
             <div id="carouselExampleControls${cardIdx}" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
+<<<<<<< HEAD
                         <img id="img-accommodation-0-${cardIdx}" class="d-block w-100" src="assets/img/placeholder.png" alt="First slide">
                     </div>
                     <div class="carousel-item">
@@ -111,6 +112,36 @@ function generateCard(city) {
                     </div>
                     <div class="carousel-item">
                         <img id="img-accommodation-9-${cardIdx}" class="d-block w-100" src="assets/img/placeholder.png" alt="Third slide">
+=======
+                        <img id="img-accommodation-0-${cardIdx}" class="d-block w-100" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="img-accommodation-1-${cardIdx}" class="d-block w-100" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="img-accommodation-2-${cardIdx}" class="d-block w-100" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="img-accommodation-3-${cardIdx}" class="d-block w-100" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="img-accommodation-4-${cardIdx}" class="d-block w-100" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="img-accommodation-5-${cardIdx}" class="d-block w-100" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="img-accommodation-6-${cardIdx}" class="d-block w-100" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="img-accommodation-7-${cardIdx}" class="d-block w-100" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="img-accommodation-8-${cardIdx}" class="d-block w-100" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="img-accommodation-9-${cardIdx}" class="d-block w-100" alt="Third slide">
+>>>>>>> 1df09e0e62bb6b2fa4389008f9a9e41b690088b3
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls${cardIdx}" role="button" data-slide="prev">
